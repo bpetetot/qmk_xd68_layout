@@ -16,7 +16,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |----------------------------------------------------------------|
      * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift | Up|End |
      * |----------------------------------------------------------------|
-     * |Code|Ctrl|Alt |        Space          |Alt|Ctrl|FN |Lef|Dow|Rig |
+     * |Ctrl|Alt|Code |        Space          |Alt|Ctrl|FN |Lef|Dow|Rig |
      * `----------------------------------------------------------------'
      */
     [_BL] = LAYOUT_65_ansi(
@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, C(G(KC_Q)),
         KC_CAPS, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,  KC_HOME,
         KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, KC_UP,   KC_END,
-        KC_LGUI, KC_LCTL, KC_LALT,                   LT(_FL, KC_SPC),                    KC_RALT, KC_RCTL, MO(_FL), KC_LEFT, KC_DOWN, KC_RGHT
+        KC_LCTL, KC_LALT, KC_LGUI,                   LT(_FL, KC_SPC),                    KC_RALT, KC_RCTL, MO(_FL), KC_LEFT, KC_DOWN, KC_RGHT
     ),
 
     /* Keymap _FL: Function Layer
